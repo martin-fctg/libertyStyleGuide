@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/smoothness/jquery-ui.css">
+
+
+<style>
+    .hs-datepicker {
+       display: none !important;
+    }
+    .hs-dateinput .hs-input {
+       display: none !important;
+    }
+    .hs_appointment_time .input {
+        display: none !important;
+    }
+    .hs_appointment_calendar .input {
+        display: none !important;
+    }
+    
+    .ui-widget-header {
+        background: #fff !important;
+        border: 0px;
+    }
+    
+    .ui-datepicker-month, .ui-datepicker-year {
+        padding: 5px 3px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: bold;
+        background-color: #fff;
+    }
+    
+    .ui-datepicker-calendar thead th {
+        padding: 5px 3px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500; 
+    }
+    
+    .ui-datepicker-unselectable span {
+        background: #c50f25 !important;
+        border-color: #9e0c1e !important;
+        color: white !important;
+        cursor: default;
+        opacity: 0.7;
+        box-shadow: none;
+    }
+    
+    .ui-widget-content .ui-state-default {
+       border: 0px !important;
+       background: #ccc !important;
+       color: #ffffff !important;
+       transition: .25s;
+    }
+    
+    .ui-widget-content .ui-state-default:hover {
+        background: #c50f25 !important;
+
+    }
+    
+    .ui-widget-content .ui-state-highlight {
+        background: #c50f25 !important;
+        color: #ffffff !important;
+        border: 0px solid #c50f25 !important;
+    }
+    
+</style>
+
+
+
+<style>
+    .ui-timepicker-wrapper{overflow-y:auto;max-height:150px;width:6.5em;background:#fff;border:1px solid #ddd;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);outline:0;z-index:10001;margin:0}.ui-timepicker-wrapper.ui-timepicker-with-duration{width:13em}.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60{width:11em}.ui-timepicker-list{margin:0;padding:0;list-style:none}.ui-timepicker-duration{margin-left:5px;color:#888}.ui-timepicker-list:hover .ui-timepicker-duration{color:#888}.ui-timepicker-list li{padding:3px 0 3px 5px;cursor:pointer;white-space:nowrap;color:#000;list-style:none;margin:0}.ui-timepicker-list:hover .ui-timepicker-selected{background:#fff;color:#000}li.ui-timepicker-selected,.ui-timepicker-list li:hover,.ui-timepicker-list .ui-timepicker-selected:hover{background:#1980EC;color:#fff}li.ui-timepicker-selected .ui-timepicker-duration,.ui-timepicker-list li:hover .ui-timepicker-duration{color:#ccc}.ui-timepicker-list li.ui-timepicker-disabled,.ui-timepicker-list li.ui-timepicker-disabled:hover,.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled{color:#888;cursor:default}.ui-timepicker-list li.ui-timepicker-disabled:hover,.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled{background:#f2f2f2}
+</style>
+
+
