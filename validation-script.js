@@ -1,8 +1,8 @@
 <script>
 $(window).load( function(){
     
-$('.hs_appointment_calendar').append('<input type="text" placeholder="Date*" id="datepicker">');
-$('.hs_appointment_time').append('<input id="appointmentTime" type="text" placeholder="Time" class="time ui-timepicker-input" autocomplete="off">');
+$('.hs_appointment_calendar_2').append('<input type="text" placeholder="Date*" id="datepicker">');
+$('.hs_appointment_time_test').append('<input id="appointmentTime" type="text" placeholder="Time" class="time ui-timepicker-input" autocomplete="off">');
 var date = new Date();
 var hours = date.getHours();
 var hours = hours + 1;
@@ -23,12 +23,14 @@ var curDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFull
 });
 
    $(window).click(function(){
+
      var date = new Date();
      var day = date.getDate();
      var curDate = (date.getMonth() + 1) + '/' + ('0' + day).slice(-2) + '/' +  date.getFullYear();
      var pickedDate = $('#datepicker').val();
-     if (pickedDate === curDate) {
 
+     if (pickedDate === curDate) {
+  
        $(".ui-timepicker-list li").each(function(){
          var time = $(this).text();
          var time = time.replace(/[ap]/, " $&");
@@ -37,7 +39,7 @@ var curDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFull
 
 
          if (date2 > date1) {
-
+  
            $(this).addClass("ui-timepicker-disabled");
          } else {
            $(this).removeClass("ui-timepicker-disabled");
@@ -57,9 +59,9 @@ var curDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFull
        var fullAptDate = (aptYear + '-' + (aptMonth + 1) + '-' + aptDay);
        
        
-      $('.hs_appointment_calendar .hs-input').val(fullAptDate).change();
+      $('.hs_appointment_calendar_2 .hs-input').val(fullAptDate).change();
 
-      $('.hs_appointment_time .input .hs-input').val(aptTime).change();
+      $('.hs_appointment_time_test .input .hs-input').val(aptTime).change();
    })
    
    $('#datepicker').click(function(){
@@ -112,7 +114,7 @@ var curDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFull
        var time = time.replace(/[ap]/, " $&");
        var date1 = new Date('Sat Sep 24 2011 ' + time).getTime();
        var date2 = new Date('Sat Sep 24 2011 ' + strTime).getTime();
-
+  
        if ((pickedDate === curDate) && (date1 < date2)) {
            $('.ui-timepicker-input').css('background', '#fcc');
            $('.hs_submit input').attr( "disabled", 'disabled' );
